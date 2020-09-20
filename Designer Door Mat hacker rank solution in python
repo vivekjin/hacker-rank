@@ -1,0 +1,83 @@
+li = [int(i) for i in input().split()]
+row = li[0]
+col = li[1]
+half_row = (row - 1) /  2
+half_col = (col - 3) / 2
+
+
+
+i = 0
+while i < half_row:
+    
+    
+    j = 0
+    while j < half_col:
+      print("-",end ="")
+      j += 1
+    
+    
+    
+    mid = 0
+    while mid <= i:
+      print(".|." , end = "")
+      mid += 1
+    
+    
+    
+    mid2 = 0
+    while mid2 < i:
+      print(".|.", end = "")
+      mid2 += 1
+    
+    
+    
+    j2 = 0
+    while j2 < half_col:
+      print("-", end ="")
+      j2 += 1
+
+      
+    print()
+    
+    
+    
+    half_col = half_col - 3
+    i = i + 1
+
+new = (col - 7) // 2
+i = 0
+while i < new:
+  print("-",end ="")
+  i += 1
+print("WELCOME",end = "")
+i = 0
+while i < new:
+  print("-",end ="")
+  i += 1
+print()
+i = 0
+k = 3
+while i < half_row:
+  j = 0
+  while j < k:
+    print("-", end = "")
+    j += 1
+  q = 0
+  while q < (half_row - i):
+    print(".|." , end = "")
+    q += 1
+  q = 1
+  while q < (half_row - i):
+    print(".|." , end = "")
+    q += 1
+  
+  j = 0
+  while j < k:
+    print("-", end = "")
+    j += 1
+  
+  
+
+  print()
+  k += 3
+  i += 1
