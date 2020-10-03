@@ -1,0 +1,49 @@
+#sam's house co-ordinate
+i = [int(i) for i in input().split()]
+s = i[0]
+t = i[1]
+
+
+#tree co-ordinate
+j = [int(i) for i in input().split()]
+a = j[0]
+b = j[1]
+
+#number of apple and orange
+k = [int(i) for i in input().split()]
+m = k[0]
+n = k[1]
+
+#apple's and orange's co-ordinate from their respective tree
+apple = [int(i) for i in input().split()]
+orange = [int(i) for i in input().split()]
+#calculation
+i = 0
+while i < len(apple):
+  apple[i] = apple[i] + a
+  i = i + 1
+
+i = 0
+while i < len(orange):
+  orange[i] = orange[i] + b
+  i = i + 1
+
+capple = 0
+for i in apple:
+    if i >= s and i <=t:
+        capple += 1
+
+
+corange = 0
+for i in orange:
+    if i >= s and i <=t:
+        corange += 1
+        
+
+print(capple)
+print(corange)
+
+
+
+
+
